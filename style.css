@@ -1,0 +1,142 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Kavoon&display=swap');
+  
+  @import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+
+  
+  @import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
+  
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100&family=Montserrat:wght@100&family=Open+Sans:wght@300&family=Yusei+Magic&display=swap');
+
+  
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Montserrat:wght@100&family=Open+Sans:wght@300&family=Roboto&family=Yusei+Magic&display=swap');
+
+
+
+  
+
+
+body{
+    background-image: url(imagenes/fondo-pintura-acrilica-verde-claro.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    background-attachment:fixed;
+    background-size: cover;
+
+}
+
+.carousel-item{
+    height: 100vh;
+    min-width: 300px;
+}
+
+.carousel-caption{
+    bottom: 200px;
+    z-index: 2;
+}
+.carousel-inner::before{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(10, 40, 48, 0.37);
+    z-index: 1;
+}
+.navbar-nav a{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navbar-dark .navbar-succes{
+
+    color: #f4f6f9;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+
+.form-content{
+    background: linear-gradient(
+        50deg,
+        rgba(97, 52, 109, 0)20%,
+        rgba(67, 116, 109, 0)),
+        url(imagenes/otra.jpg);
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 50px;
+        width: 500px;
+        border-radius: 25px;
+        overflow: auto;
+        border: 1px solid #ccc;
+        max-height: 290px;
+}      
+
+.form-content h2{
+    color: #f4f6f9;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+label{
+    font-size: 17px;
+    color: #080808;
+    margin-bottom: 10px;
+}
+
+input , textarea{
+
+    padding: 17px 28px;
+    background-color:#fafcf8 ;
+    border:0;
+    font-size: 15px;
+    color: #0d0d0e;
+    margin-bottom: 20px;
+    border-radius: 10px;
+
+
+}
+:focus{
+    outline: 1px solid #82E0AA;
+}
+
+.btn{
+    background-color: #82E0AA;
+    width: 150px;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.btn.hover{
+    background-color: #7AC49A ;
+}
+
+@media(max-width:991px){
+    body{
+        padding: 30px;
+    }
+
+    .form-content{
+        width: 100%;
+    }
+
+    form{
+        width:100%;
+    }
+}
+
